@@ -1,0 +1,95 @@
+/* THESE STYLES ARE FOR THE MAIN INDEX.HTML FILE */
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+#preloader{
+    background: #071225 url(../images/cyqle-loader.gif) no-repeat center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#preloader p{
+    color:white;
+    position: absolute;
+    bottom: 10rem;
+}
+nav{
+    background-color: #2C3D7B;
+}
+
+#home{
+    background-color: #BCFFFc;
+}
+#home h1,h2{
+    color:#2C3D7B;
+}
+
+#login{
+    background: url(../images/bike_with_man.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color:#2C3D7B;
+    text-align: center;
+    padding: 120px 60px;
+    text-decoration: none;
+
+}
+.login-container{
+    padding: 2rem 0 1rem 0;
+    background-color: rgba(234, 204, 29, 0.7);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+#login button{
+    border-color: #2C3D7B;
+    width: 60%;
+    text-decoration: none;
+
+}
+.login{
+    margin: 1rem;
+    width: 100;
+}
+.login:last-child{
+    background-color:#2C3D7B;
+    color:white;
+}
+
+/* START OF TYPES PAGE */
+#select{
+    background: url(../images/guy_with_phone.png);
+    background-size: cover;
+    height: 100vh;
+}
+.outer-card-container{
+    border-radius: 0 0 1rem 1rem;
+}
+.first-box{
+    background-color: rgba(234, 204, 29, 1);
+}
+.second-box{
+    background: rgba(44, 61, 123, 0.8);
+    box-shadow: 0px 3.39394px 21.2121px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 1rem 1rem;
+
+
+}
+.inner-card{
+    background: linear-gradient(148.79deg, rgba(119, 134, 189, 0.8) 0%, rgba(91, 103, 145, 0.56) 100%);
+}
+
+.inner-card:hover{
+    border: 1px solid white;
+}
+
+.select-continue{
+    background: rgba(44, 61, 123, 0.8);
+    width: 15%;
+    border-radius: 100%;
+    text-align: center;
+}
+
+/* END OF TYPES PAGE */
