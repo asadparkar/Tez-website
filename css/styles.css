@@ -3,6 +3,18 @@ body{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+.preloader{
+    height: 100vh;
+    width: 100%;
+    background:#071225 url(../images/cyqle-loader.gif) no-repeat center;
+    background-size: 50%;
+    position: fixed;
+}
+.preloader p{
+    position: absolute;
+    color: white;
+    bottom: 10rem;
+}
 nav{
     background-color: #2C3D7B;
 }
@@ -56,6 +68,7 @@ nav{
 }
 .first-box{
     background-color: rgba(234, 204, 29, 1);
+    border-radius: 1rem 1rem 0 0;
 }
 .second-box{
     background: rgba(44, 61, 123, 0.8);
