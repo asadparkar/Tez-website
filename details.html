@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/details.css">
 
 
   <!-- IMPORTING FONTS FROM GOOGLE -->
@@ -14,37 +15,52 @@
         <!-- NAVIGATION BAR WITH PROFILE -->
         <nav class="">
             <div class="nav-container flex justify-between p-3">
-                <img src="/images/nav-lines.png" class="cursor-pointer " alt="Navigation-bar">
-                <img src="/images/Tez Logo.png" alt="Tez-logo" class="logo">
-                <img src="/images/Profile Icon.png" alt="Tez-Profile-Login" class="dashboard cursor-pointer">
+                <img src="images/nav-lines.png" class="cursor-pointer " alt="Navigation-bar">
+                <img src="images/Tezlogo.png" alt="Tez-logo" class="logo w-12">
+                <img src="images/Profile Icon.png" alt="Tez-Profile-Login" class="dashboard cursor-pointer">
             </div>
         </nav>
         <!-- END OF NAVIGATION BAR -->
-
         
-    <section id="select" class="">
-        <div class="outer-card-container p-5">
-            <div class="first-box text-center flex flex-col items-center p-4">
-                <p class="font-medium text-lg">Order Details</p>
-            </div>
-            <div class="second-box text-center flex flex-col items-center p-6">
-                <a href="" class="flex flex-col items-center">
-                    <div class="inner-card w-4/5 rounded-xl">
-                        <h1 class="text-2xl text-white font-bold mt-6">Food</h1>
-                        <img src="/images/pizza.png" alt="">
-    
+        <section id="details">
+            <div class="detail-outer-box p-5">
+                <div class="first-detail-box p-2">
+                    <p class="text-center">Order Details<p>
+                </div>
+                <div class="second-detail-box p-4">
+                    <div class="detail-1 p-2">
+                        <h1 class="text-center font-bold text-2xl text-white">Delivery app</h1>
+                        <div class="restuarant-images flex items-center justify-center ">
+                            <img class="zomato cursor-pointer" src="images/zomato.png" alt="">
+                            <img class="swiggy cursor-pointer" src="images/swiggy.png" alt="">
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h1 class="text-center font-bold text-xl text-white">Or</h1>
+                            <input class="p-2 font-bold text-center" type="text" placeholder="Name of restaurant">
+                            <p class="font-bold text-white text-xs text-center mt-3">*We accept food deliveries arriving 
+                                on gate 1-A only.</p>
+                        </div>
                     </div>
-                </a>
-
-                <a href="" class="flex flex-col items-center">
-                    <div class="inner-card w-4/5 rounded-xl mt-5">
-                        <h1 class="text-2xl text-white font-bold mt-6">Package</h1>
-                        <img src="/images/package.png" alt="">
+                    <div class="detail-2 mt-6 p-6">
+                        <h1 class="font-bold text-white text-2xl text-center mb-2">ETA of delivery</h1>
+                        <div class="eta flex justify-between">
+                            <input type="text">
+                            <input type="text">
+                            <p class="font-bold text-white text-xl">:</p>
+                            <input type="text">
+                            <input type="text">
+                        </div>
                     </div>
-                </a>
+                </div>
+            </div>
+            <div class="flex justify-evenly mt-2">
+                <img src="images/previous.png" alt="">
+                <img src="images/next.png" alt="">
 
             </div>
-        </div>
+        </section>
 
-    </section>
+
+
+        <script src="javascript/details.js"></script>
 </body>
