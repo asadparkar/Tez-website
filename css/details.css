@@ -20,6 +20,12 @@
 .detail-1 input{
     border-radius: 0.5rem;
 }
+.detail-1 select{
+    border-radius: 1rem;
+}
+select option{
+    font-size: 20px;
+}
 .detail-1 input::placeholder{
     color:#2C3D7B;
 }
@@ -43,4 +49,14 @@ img{
 }
 .slide-btn{
     width: 20%;;
+}
+.delivery-1 input{
+    border-radius: 1rem;
+}
+.delivery-1 input::placeholder{
+    color:#2C3D7B;
+}
+.delivery-1{
+    background: linear-gradient(148.79deg, rgba(119, 134, 189, 0.8) 0%, rgba(91, 103, 145, 0.8) 100%);
+    border-radius: 1rem;
 }

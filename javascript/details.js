@@ -29,3 +29,13 @@ swiggy.addEventListener('click',()=>{
         swiggy.style.opacity = "1";
     }
 })
+
+document.querySelector(".prev").onclick = function () {
+    location.href = "/type.html";
+};
+document.querySelector(".next").onclick = function () {
+    location.href = "/delivery.html";
+};
+document.querySelector(".bruhh").onclick = function () {
+    location.href = "/details.html";
+};
