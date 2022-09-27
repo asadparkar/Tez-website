@@ -31,11 +31,11 @@ swiggy.addEventListener('click',()=>{
 })
 
 document.querySelector(".prev").onclick = function () {
-    location.href = "/type.html";
+    location.href = "type.html";
 };
 document.querySelector(".next").onclick = function () {
-    location.href = "/delivery.html";
+    location.href = "delivery.html";
 };
 document.querySelector(".bruhh").onclick = function () {
-    location.href = "/details.html";
+    location.href = "details.html";
 };
