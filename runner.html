@@ -2,20 +2,19 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv = "refresh" content = "7; url = order.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/details.css">
   <link rel="stylesheet" href="css/noscroll.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 
   <!-- IMPORTING FONTS FROM GOOGLE -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- IMORTING FONT AWESOME -->
-  <script src="https://kit.fontawesome.com/c7712fda9c.js" crossorigin="anonymous"></script>
-
-  <!-- IMPORTING JQUERY -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 <body>
     <!-- PRELOADER -->
@@ -51,23 +50,31 @@
     </nav>
     <!-- END OF NAVIGATION BAR -->
 
-    <!-- HOME PAGE -->
-    <section id="home">
-        <div class="hero-text text-center pt-16 flex flex-col justify-center items-center">
-            <h2 class="font-bold text-xl pt-6 w-3/5">Tired of having to rush long distances to collect your orders?</h2>
-            <h1 class="text-4xl font-black">We got you!</h1>
-        </div>
-    </section>
-    <!-- END OF HOME PAGE -->
+        <section id="runner">
+            <div class="runner-text flex items-center justify-center pt-6">
+                <h1 class="text-3xl font-black text-center">Your order is on the way!</h1>
+            </div>
 
-    <!-- LOGIN SECTION -->
-    <section id="login" class="text-center">
-        <div class="login-container flex flex-col text-center items-center justify-center">
-                <button class="border-2 text-xl rounded-2xl login"><a href="type.html">Sign-up</a></button>
-            <button class="border-2 text-xl rounded-2xl login"><a href="type.html">Login</a></button>
-        </div>
-    </section>
-    <!-- END OF LOGIN SECTION -->
+            <div class="runner-container">
+                <div class="runner-outer-box p-5">
+                    <div class="first-runner-box p-4 mt-6">
+                        <p class="text-center text-xl">Runner Details<p>
+                    </div>
+                    <div class="second-runner-box p-4">
+                        <div class="runner-inner flex items p-3 rounded-lg">
+                            <div>
+                                <img src="images/pizza.jpg.png" alt="">
+                            </div>
+                            <div class="ml-6 w-1/2">
+                                <p class="font-medium text-white text-xl">Name</p>
+                                <h1 class="bg-white rounded-lg p-1 text-sm w-full">Deepam Kumar</h1>
+                                <p class="font-medium text-white text-xl mt-2">Phone No:</p>
+                                <h1 class="bg-white rounded-lg p-1 text-sm w-full">+91 7977567790</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <script src="javascript/details.js"></script>
 </body>

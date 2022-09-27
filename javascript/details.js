@@ -1,3 +1,7 @@
+$(window).on("load",function(){
+    $(".preloader").fadeOut("slow");
+})
+
 var zomato = document.querySelector('.zomato');
 var swiggy = document.querySelector('.swiggy');
 
@@ -29,13 +33,3 @@ swiggy.addEventListener('click',()=>{
         swiggy.style.opacity = "1";
     }
 })
-
-document.querySelector(".prev").onclick = function () {
-    location.href = "/tez-website/type.html";
-};
-document.querySelector(".next").onclick = function () {
-    location.href = "/tez-website/delivery.html";
-};
-document.querySelector(".bruhh").onclick = function () {
-    location.href = "/tez-website/details.html";
-};

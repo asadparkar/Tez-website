@@ -60,3 +60,73 @@ img{
     background: linear-gradient(148.79deg, rgba(119, 134, 189, 0.8) 0%, rgba(91, 103, 145, 0.8) 100%);
     border-radius: 1rem;
 }
+.next{
+    width: 60px;
+    height:60px;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 2rem;
+    background: rgba(44, 61, 123, 0.8);
+}
+.prev{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 2rem;
+    background: rgba(44, 61, 123, 0.8);
+}
+svg{
+    fill: rgba(234, 204, 29, 1);
+}
+
+.runner-text{
+    background-color: #BCFFFC;
+    color:#2C3D7B;
+}
+.runner-inner{
+    background: linear-gradient(148.79deg, rgba(119, 134, 189, 0.8) 0%, rgba(91, 103, 145, 0.56) 100%);
+}
+.runner-text h1{
+    width: 70%;
+}
+.runner-container{
+    background: #BCFFFc url(../images/runner.png) no-repeat  center;
+    height: 100vh;
+    background-size: contain;
+}
+.first-runner-box,.first-order-box{
+    background-color: rgba(234, 204, 29, 1);
+    border-radius: 1rem 1rem 0 0;
+}
+.second-runner-box{
+    background: rgba(44, 61, 123, 0.8);
+    box-shadow: 0px 3.39394px 21.2121px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 1rem 1rem;
+}
+.runner-inner img{
+    width: 100px;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.second-order-box{
+    background: rgba(44, 61, 123, 0.8);
+    box-shadow: 0px 3.39394px 21.2121px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 1rem 1rem;
+}
+.second-order-box img{
+    width: 70%;
+}
+#order{
+    background-color: #BCFFFc;
+    height: 100vh;
+}
+
+#received{
+    background:#BCFFFc url(../images/thanks.png) no-repeat bottom;
+    height: 100vh;
+    background-size: contain;
+    color:#2C3D7B;
+}
+

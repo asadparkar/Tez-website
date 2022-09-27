@@ -2,6 +2,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .preloader{
     height: 100vh;
@@ -9,6 +10,10 @@ body{
     background:#071225 url(../images/cyqle-loader.gif) no-repeat center;
     background-size: 50%;
     position: fixed;
+    z-index: 100;
+}
+.preloader img{
+    width: 20%;
 }
 .preloader p{
     position: absolute;
@@ -17,6 +22,16 @@ body{
 }
 nav{
     background-color: #2C3D7B;
+}
+nav svg{
+    width: 24%;
+    fill: #15FF56;
+}
+.user svg{
+    float: right;
+}
+nav .logo{
+    width: 50%;
 }
 
 #home{
@@ -27,13 +42,14 @@ nav{
 }
 
 #login{
-    background: url(../images/bike_with_man.png);
+    background: #BCFFFc url(../images/bike_with_man.png);
     background-size: 100%;
     background-repeat: no-repeat;
     color:#2C3D7B;
     text-align: center;
     padding: 120px 60px;
     text-decoration: none;
+    height: 100vh;
 
 }
 .login-container{
@@ -50,7 +66,7 @@ nav{
 }
 .login{
     margin: 1rem;
-    width: 100;
+    width: 100%;
 }
 .login:last-child{
     background-color:#2C3D7B;
@@ -59,7 +75,7 @@ nav{
 
 /* START OF TYPES PAGE */
 #select{
-    background: url(../images/guy_with_phone.png);
+    background: #BCFFFc url(../images/guy_with_phone.png);
     background-size: cover;
     height: 100vh;
 }
