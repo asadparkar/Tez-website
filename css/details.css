@@ -130,3 +130,42 @@ svg{
     color:#2C3D7B;
 }
 
+#logindetails{
+    color:#2C3D7B;
+    background: #BCFFFc url(../images/busman.png) no-repeat bottom;
+    background-size: contain;
+    height: 100vh;
+}
+.first-login-card{
+    background: #2C3D7B;
+    border-radius: 1rem 1rem 0 0;
+}
+.second-login-card{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 3.39394px 21.2121px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 1rem 1rem;
+}
+.second-login-card input, .vitemail{
+    border:2px solid 
+    #2C3D7B;
+}
+input::placeholder{
+    color:#2C3D7B;
+}
+.second-login-card select{
+    border:2px solid 
+    #2C3D7B;
+}
+#logindetails button{
+    background: #2C3D7B;
+    color: white;
+}
+
+#login-page{
+    background: #BCFFFC url(../images/busman.png) no-repeat bottom;
+    height: 100vh;
+    background-size: contain;
+}
+.log-container h1{
+    color:#2C3D7B;
+}

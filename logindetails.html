@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/details.css">
+
+  <!-- IMPORTING FONTS FROM GOOGLE -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- IMORTING FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c7712fda9c.js" crossorigin="anonymous"></script>
+
+  <!-- IMPORTING JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="flex flex-col items-center">
+            <img class="pt-10"src="images/Tezlogo.png" alt="">
+            <p>In-campus delivery</p>
+        </div>
+    </div>
+    <!-- END OF PRELOADER -->
+
+        <!-- NAVIGATION BAR WITH PROFILE -->
+        <nav id="navigation">
+            <div class="nav-container p-3 flex justify-between">
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                        <i class="fas fa-times" id="cancel"></i>
+                    </label>
+                    <div class="navpanel">
+                        <header class="flex flex-col justify-center items-center p-4">
+    
+                            <img src="images/Tezlogo.png" alt="" class="w-1/2">
+                            <p class="text-sm">In-campus delivery</p>
+                        </header>
+                        <ul class="flex flex-col h-full">
+                            <li><a href=""><i class="fas fa-stopwatch"></i>Order Status</a></li>
+                            <li><a href=""><i class="fas fa-history"></i>Order History</a></li>
+                            <li><a href=""><i class="fas fa-question-circle"></i>FAQ's</a></li>
+                            <li><a href=""><i class="fas fa-users"></i>About Us</a></li>
+                            <div class="">
+                                <li><a href="" class="contactus"><i class="fas fa-phone-alt"></i>Contact us</a></li>
+    
+                            </div>
+    
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="flex items-center justify-center">
+                    <img src="images/Tezlogo.png" alt="Tez-logo" class="nav-logo">
+                </div>
+    
+                <div class="">
+                    <div class="profile-container">
+                        <i class="fas fa-user-circle fa-2x" id="user"></i>
+                    </div>
+                        <div class="dashboard">
+                            <div class="first-dashboard">
+                                <div class="first-dashboard-content">
+                                    <h1 class="pt-24 text-white font-bold text-sm text-center ">DEEPAM PURKAYASTHA</h1>
+                                    <h1 class="text-white font-bold text-sm text-center">Men’s Hostel, K-628</h1>
+                                </div>
+    
+                            </div>
+                            <div class="second-dashboard p-2">
+                                <div class="second-dashboard-content">
+                                    <a href=""><button class="text-white mt-4 w-full p-2 rounded-md text-center bg-blue-200"><i class="fa-solid fa-user-pen"></i>Edit Profile</button></a>
+                                    <div class="flex items-center justify-center">
+                                        <a href=""><button class="text-white mt-4 p-2 rounded-md text-center bg-red-600"><i class="fa-solid fa-right-from-bracket"></i></i>Log out</button></a>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center">
+                                    <button class="p-2 bg-slate-50 rounded-lg text-lg mt-10 close-profile">Close</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                </div>
+    
+            </div>
+    
+    
+    
+    
+        </nav>
+        <!-- END OF NAVIGATION BAR -->
+
+    <!-- HOME PAGE -->
+    <section id="logindetails" class="flex items-center flex-col">
+        <h1 class="font-black text-4xl text-center w-2/3 pt-5">Ruko zara, Sabar karo!</h1>
+        <div class="login-outer-card p-6">
+            <div class="first-login-card p-4">
+                <h2 class="text-white text-xl text-center">Sign-Up</h2>
+            </div>
+            <div class="second-login-card p-4">
+                <p class="font-medium text-md mt-4">Your VIT E-mail ID</p>
+                <p class="bg-gray-200 p-2 rounded-lg vitemail">deepam.purkayastha2021@vitstu</p>
+
+                <p class="font-medium text-md mt-10">What should we call you?</p>
+                <input type="text" placeholder="Deepam" class="p-2 rounded-lg w-full">
+
+                <p class="font-medium text-md mt-10">Mobile Number</p>
+                <input type="text" placeholder="Enter your Mobile No." class="p-2 rounded-lg w-full">
+
+                <p class="font-medium text-md mt-10">Default Adress</p>
+                <!-- <label for="hostel">Select Hostel</label> -->
+                <select id="hostel" name="hostels" class="p-2 text-lg rounded-md w-full">
+                  <option value="" disabled selected>Select your option</option>
+                  <option value="volvo">Men's Hostel</option>
+                  <option value="volvo">Women's Hostel</option>
+                </select>
+
+            </div>
+        </div>
+        <div>
+            <a href="type.html"><button class="p-2 rounded-lg text-lg">Let's Roll!</button></a>
+        </div>
+    </section>
+
+
+    <script src="javascript/details.js"></script>
+</body>
+</html>

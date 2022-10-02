@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
 <head>
+  <title>Tez ~ In-Campus delivery</title>
+  <link rel="icon" type="image/x-icon" href="images/icon.ico">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/noscroll.css">
+
+
 
   <!-- IMPORTING FONTS FROM GOOGLE -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,40 +27,84 @@
     <div class="preloader">
         <div class="flex flex-col items-center">
             <img class="pt-10"src="images/Tezlogo.png" alt="">
-            <p>Your favourite delivery partner</p>
+            <p>In-campus delivery</p>
         </div>
     </div>
     <!-- END OF PRELOADER -->
 
     <!-- NAVIGATION BAR WITH PROFILE -->
-    <nav class="">
-        <div class="nav-container p-3 flex">
+    <nav id="navigation">
+        <div class="nav-container p-3 flex justify-between">
             <div>
-                <a href="" class="navbar">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                </a>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn"></i>
+                    <i class="fas fa-times" id="cancel"></i>
+                </label>
+                <div class="navpanel">
+                    <header class="flex flex-col justify-center items-center p-4">
+
+                        <img src="images/Tezlogo.png" alt="" class="w-1/2">
+                        <p class="text-sm">In-campus delivery</p>
+                    </header>
+                    <ul class="flex flex-col h-full">
+                        <li><a href=""><i class="fas fa-stopwatch"></i>Order Status</a></li>
+                        <li><a href=""><i class="fas fa-history"></i>Order History</a></li>
+                        <li><a href=""><i class="fas fa-question-circle"></i>FAQ's</a></li>
+                        <li><a href=""><i class="fas fa-users"></i>About Us</a></li>
+                        <div class="">
+                            <li><a href="" class="contactus"><i class="fas fa-phone-alt"></i>Contact us</a></li>
+
+                        </div>
+
+                    </ul>
+                </div>
             </div>
 
             <div class="flex items-center justify-center">
-                <img src="images/Tezlogo.png" alt="Tez-logo" class="logo">
+                <img src="images/Tezlogo.png" alt="Tez-logo" class="nav-logo">
             </div>
 
-            <div>
-            <a href="" class="user">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM256 272c39.8 0 72-32.2 72-72s-32.2-72-72-72s-72 32.2-72 72s32.2 72 72 72z"/></svg>
-            </a>
-            </div>
+            <div class="">
+                <div class="profile-container">
+                    <i class="fas fa-user-circle fa-2x" id="user"></i>
+                </div>
+                    <div class="dashboard">
+                        <div class="first-dashboard">
+                            <div class="first-dashboard-content">
+                                <h1 class="pt-24 text-white font-bold text-sm text-center ">DEEPAM PURKAYASTHA</h1>
+                                <h1 class="text-white font-bold text-sm text-center">Men’s Hostel, K-628</h1>
+                            </div>
 
+                        </div>
+                        <div class="second-dashboard p-2">
+                            <div class="second-dashboard-content">
+                                <a href=""><button class="text-white mt-4 w-full p-2 rounded-md text-center bg-blue-200"><i class="fa-solid fa-user-pen"></i>Edit Profile</button></a>
+                                <div class="flex items-center justify-center">
+                                    <a href=""><button class="text-white mt-4 p-2 rounded-md text-center bg-red-600"><i class="fa-solid fa-right-from-bracket"></i></i>Log out</button></a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <button class="p-2 bg-slate-50 rounded-lg text-lg mt-10 close-profile">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+            </div>
 
         </div>
+
+
     </nav>
     <!-- END OF NAVIGATION BAR -->
 
     <!-- HOME PAGE -->
     <section id="home">
         <div class="hero-text text-center pt-16 flex flex-col justify-center items-center">
-            <h2 class="font-bold text-xl pt-6 w-3/5">Tired of having to rush long distances to collect your orders?</h2>
-            <h1 class="text-4xl font-black">We got you!</h1>
+            <h1 class="text-4xl font-black">Thak gaya hoon vro.</h1>
+
+            <h2 class="font-bold text-xl pt-6 w-4/5">Tired of having to rush long distances to collect your orders? We got your back! (and your food and your package).</h2>
         </div>
     </section>
     <!-- END OF HOME PAGE -->
@@ -63,8 +112,8 @@
     <!-- LOGIN SECTION -->
     <section id="login" class="text-center">
         <div class="login-container flex flex-col text-center items-center justify-center">
-                <button class="border-2 text-xl rounded-2xl login"><a href="type.html">Sign-up</a></button>
-            <button class="border-2 text-xl rounded-2xl login"><a href="type.html">Login</a></button>
+                <button class="border-2 text-xl rounded-2xl login"><a href="signup.html">Sign-up</a></button>
+            <button class="border-2 text-xl rounded-2xl login"><a href="login.html">Login</a></button>
         </div>
     </section>
     <!-- END OF LOGIN SECTION -->

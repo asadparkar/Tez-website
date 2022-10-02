@@ -4,6 +4,8 @@ body{
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
+
 .preloader{
     height: 100vh;
     width: 100%;
@@ -20,18 +22,134 @@ body{
     color: white;
     bottom: 10rem;
 }
+
+.navpanel{
+    position: fixed;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(175.83deg, rgba(44, 61, 123, 0.85) 0%, rgba(65, 88, 173, 0.85) 100%);
+    transition: all 0.5s ease;
+    z-index: 99;
+    top:0;
+}
+.navpanel header{
+    font-size: 22px;
+    color:white;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+    background: rgba(27, 37, 73, 0.8);
+}
+.navpanel ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:white;
+    padding-left: 40px;
+    box-sizing: border-box;
+
+}
+
+.navpanel ul a:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.055) 0%, rgba(255, 255, 255, 0.11) 100%);
+    border-radius: 15px;
+}
+.navpanel ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+label #btn{
+    left: 0px;
+    top:5px;
+    font-size: 35px;
+    color:#15FF56    ;
+    padding: 6px 12px;
+}
+label #cancel{
+    z-index: 111;
+    left: -195px;
+    top:17px;
+    font-size: 30px;
+    color:#15FF56    ;
+
+}
+.nav-logo{
+    width: 22%;
+}
+.fa-user-circle{
+    color:#15FF56;
+    transition: all 0.5s;
+    font-size: 35px;
+}
+
+#check:checked ~ .navpanel{
+    left: 0px;
+}
+
+
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+
+.dashboard{
+    width: 0px;
+    height: 0px;
+    right: -220px;
+    top:-200px;
+    position: absolute;
+    transition: all 0.3s linear;
+    z-index: 105;
+}
+.first-dashboard{
+    background-color: rgba(38,52,97,1);
+    border-radius: 10px 0 0 0;
+}
+.first-dashboard-content{
+    transform: translateX(200px);
+    transition: all 1s;
+}
+
+.second-dashboard{
+    background: linear-gradient(175.83deg, rgba(44, 61, 123, 1) 0%, rgba(65, 88, 173, 0.85) 100%);
+    border-radius: 0 0 10px 10px;
+}
+
+.second-dashboard-content{
+    transform: translateX(220px);
+    transition: all 1s;
+}
+
+.dashboard{
+    overflow: hidden;}
+
+/* .fa-user-circle{
+    position: relative;
+    z-index: 106;
+    transform: translatex(-80px);
+} */
 nav{
     background-color: #2C3D7B;
 }
 nav svg{
     width: 24%;
     fill: #15FF56;
-}
-.user svg{
-    float: right;
-}
-nav .logo{
-    width: 50%;
 }
 
 #home{
@@ -50,6 +168,7 @@ nav .logo{
     padding: 120px 60px;
     text-decoration: none;
     height: 100vh;
+    
 
 }
 .login-container{
@@ -108,4 +227,7 @@ nav .logo{
     text-align: center;
 }
 
+
 /* END OF TYPES PAGE */
+
+
