@@ -1,5 +1,5 @@
 #details{
-    background: url(../images/guy_with_phone.png);
+    background: #BCFFFC url(../images/guy_with_phone.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -7,6 +7,9 @@
 .first-detail-box{
     background-color: rgba(234, 204, 29, 1);
     border-radius: 1rem 1rem 0 0;
+}
+.delivery-arrow{
+    background-color: #BCFFFC;
 }
 .detail-1{
     background: linear-gradient(148.79deg, rgba(119, 134, 189, 0.8) 0%, rgba(91, 103, 145, 0.8) 100%);
